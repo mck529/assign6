@@ -1,0 +1,45 @@
+<!--> Made by Michael Kusmirek 11/14/18
+      Assignment 6 GUI I FALL 2018 </!-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiplication Table</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/a6.css">
+    <script src="js/a6.js"></script>
+  </head>
+<body>
+
+  <h2>Multiplication Table</h2>
+
+    <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="H1">Enter horizontal axis bounding numbers.</label>
+          <input type="number" class="form-control" id="H1">
+          <br>
+          <input type="number" class="form-control" id="H2">
+          <div class="invalid-feedback">
+            Please enter a valid positive integer.
+          </div>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="V1">Enter vertical axis bounding numbers.</label>
+          <input type="number" class="form-control" id="V1">
+          <br>
+          <input type="number" class="form-control" id="V2">
+          <div class="invalid-feedback">
+            Please enter a valid positive integer.
+          </div>
+        </div>
+    </div>
+
+
+<button class= "btn btn-primary" onclick="buildTable()">Print Table</button>
+<table class="table table-bordered"  id="displayTables">
+
+</table>
